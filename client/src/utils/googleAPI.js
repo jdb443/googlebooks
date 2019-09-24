@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASEURL = "https://www.googleapis.com/books/v1/volumes?key=AIzaSyBFDl-hf6zCj-Pp2HD6VINd75YMRHMZduc&q=";
+const BASEURL = `https://www.googleapis.com/books/v1/volumes?key=${process.env.GOOGLEBOOKSAPI_key}&q=`;
 
 
 export default {
