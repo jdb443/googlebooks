@@ -1,8 +1,3 @@
-// Loading evnironmental variables here
-if (process.env.NODE_ENV !== 'production') {
-	console.log('loading dev environments');
-	require('dotenv').config();
-}
 require('dotenv').config();
 
 const express = require('express');
@@ -38,6 +33,12 @@ if (process.env.NODE_ENV === 'production') {
 	app.get('/', (req, res) => {
 		res.sendFile(path.join(__dirname, '../client/build/'));
 	});
+}
+
+// Loading evnironmental variables here
+if (process.env.NODE_ENV !== 'production') {
+	console.log('loading dev environments');
+	require('dotenv').config();
 }
 
 // Add routes, both API and view
