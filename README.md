@@ -12,7 +12,6 @@ APP_SECRET=s0m3s3cr3tk3y*
 
 ### Demo
     
-![alt text](https://github.com/jdb443/googlebooks/blob/master/Google-books800.png "Logo Title Text 1") <br>
 <img src="https://github.com/jdb443/googlebooks/blob/master/Google-books800.png"> <br>
 Demo link: "https://jdb443-google-book.herokuapp.com/"
 
