@@ -5,7 +5,7 @@ import googleAPI from '../../../utils/googleAPI';
 import SearchResults from '../../SearchResults/SearchResults';
 
 function Home() {
-    const [searchTerm, setSearchTerm] = useState();
+    const [searchTerm, setSearchTerm] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     // const [savedBooks, setSavedBooks] = useState();
     const debouncedSearchTerm = useDebounce(searchTerm, 500);
@@ -37,6 +37,7 @@ function Home() {
     // useEffect(() => {
 
     // }, [searchResults]);
+    console.log(searchResults)
 
     return (
         <div className="home-wrapper">

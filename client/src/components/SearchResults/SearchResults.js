@@ -10,7 +10,7 @@ import React, { useEffect } from 'react';
 
 function SearchResults(props) {
 
-    const { searchResults, setSearchResults } = props;
+    const { searchResults, setSearchResults, book } = props;
 
     const saveBook = (book, i) => {
         utils.saveBook(book);
@@ -26,9 +26,10 @@ function SearchResults(props) {
 
 
     return (
+
         <div className="search-results">
             {
-                searchResults.map((book, i) => (
+                searchResults.map((book, i) => {
                     // <FlipPage className="search-book">
 
 
@@ -51,17 +52,21 @@ function SearchResults(props) {
                     //         <div className="foot"><Button onClick={() => saveBook(book, i)}>+</Button></div>
 
                     // </FlipPage>
-                    <FlipPage className="search-book" key={i}>
-                        <div>
-                            <img src="http://unsplash.it/320/480" alt="antelope" />
-                        </div>
+                    const src = book.thumbnailLink ? book.thumbnailLink : "http://unsplash.it/320/480";
 
-                        <div className="flip-book">
-                            <img src={book.thumbnailLink} alt="antelope"></img>
-                        </div>
+                    return (
+                        <FlipPage className="search-book" key={i}>
+                            <div>
+                                <img className="size" src={src} alt="antelope" />
+                            </div>
 
-                    </FlipPage>
-                ))
+                            <div className="flip-book">
+                                <img className="size" src={book.thumbnailLink} alt="antelope"></img>
+                            </div>
+
+                        </FlipPage>
+                    )
+                })
             }
         </div>
     );

@@ -15,13 +15,13 @@ mongoose.connect(
 	}
   );
 
-if (process.env.MONGODB_URI) {
-	mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
-	MONGO_URL = process.env.MONGODB_URI;
-} else {
-	mongoose.connect(MONGO_LOCAL_URL, { useNewUrlParser: true }); // local mongo url
-	MONGO_URL = MONGO_LOCAL_URL;
-}
+// if (process.env.MONGODB_URI) {
+// 	mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
+// 	MONGO_URL = process.env.MONGODB_URI;
+// } else {
+// 	mongoose.connect(MONGO_LOCAL_URL, { useNewUrlParser: true }); // local mongo url
+// 	MONGO_URL = MONGO_LOCAL_URL;
+// }
 
 // should mongoose.connection be put in the call back of mongoose.connect???
 const db = mongoose.connection;
@@ -30,7 +30,7 @@ db.on('error', err => {
 });
 
 db.once('open', () => {
-	console.log(`You have successfully connected to your mongo database: ${MONGO_URL}`);
+	console.log(`You have successfully connected to your mongo database: ${process.env.MONGODB_URI}`);
 });
 
 module.exports = db;
