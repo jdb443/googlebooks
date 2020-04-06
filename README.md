@@ -4,7 +4,7 @@ Created a new React-based Google Books Search app. Built React components, work 
 
 # Demo
 
-<img src="https://raw.githubusercontent.com/jdb443/googlebooks/master/Google-books800.png?raw=true"> 
+<img src="https://raw.githubusercontent.com/jdb443/googlebooks/master/client/public/Google-books800.png?raw=true"> 
 <br>
 
 ## [Demo link](https://jdb443-google-book.herokuapp.com/): [https://jdb443-google-book.herokuapp.com/](https://jdb443-google-book.herokuapp.com/)
@@ -23,7 +23,7 @@ APP_SECRET=somes3cr3tk3y!*
 
 # circleCI notes
 
--   once our tests are added, need to change line 23 of config.yml to run "start-server-and-test ..." like this "https://docs.cypress.io/guides/guides/continuous-integration.html#Boot-your-server"
+- once our tests are added, need to change line 23 of config.yml to run "start-server-and-test ..." like this "https://docs.cypress.io/guides/guides/continuous-integration.html#Boot-your-server"
 
 ### Made Using
 
