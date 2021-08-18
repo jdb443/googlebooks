@@ -8,7 +8,7 @@ import {
 import Home from './components/pages/Home/Home';
 import Saved from './components/pages/Saved/Saved';
 import './App.css';
-/************ Components  **************/
+/************ Components **************/
 import Navi from './components/Nav/Nav';
 
 function App() {
