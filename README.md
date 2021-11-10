@@ -45,4 +45,4 @@ APP_SECRET=somes3cr3tk3y!*
 
 # Author
 
-Jonathan Behar
+Jonathan D Behar
