@@ -50,7 +50,7 @@
     "mongoose": "^5.13.20",
     "morgan": "^1.9.1",
     "npm-force-resolutions": "0.0.3",
-    "passport": "^0.4.0",
+    "passport": "^0.6.0",
     "passport-local": "^1.0.0"
   },
   "resolutions": {
