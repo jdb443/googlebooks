@@ -47,7 +47,7 @@
     "express": "^4.21.2",
     "express-session": "^1.18.1",
     "if-env": "^1.0.4",
-    "mongoose": "^6.13.5",
+    "mongoose": "^8.9.5",
     "morgan": "^1.9.1",
     "npm-force-resolutions": "0.0.3",
     "passport": "^0.6.0",
